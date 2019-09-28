@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/alisha/Documents/djangoweb/weatherapp/weather_app_django/the_weather/.env"
+set -gx VIRTUAL_ENV "/home/alisha/Documents/djangoweb/the_weather/.env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

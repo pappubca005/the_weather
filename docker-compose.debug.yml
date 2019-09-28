@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  the_weather:
+    image: the_weather
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000

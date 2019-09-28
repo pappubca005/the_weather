@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/alisha/Documents/djangoweb/weatherapp/weather_app_django/the_weather/.env"
+VIRTUAL_ENV="/home/alisha/Documents/djangoweb/the_weather/.env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
