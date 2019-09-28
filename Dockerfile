@@ -22,21 +22,7 @@ RUN python3 -m pip install -r requirements.txt
 CMD ["python3", "-m", "the_weather"]
 
 EXPOSE 8000
-#CMD exec gunicorn your_site_name.wsgi:application --bind 0.0.0.0:8000 --workers 3
 
-# Using pipenv:
-#RUN python3 -m pip install pipenv
-#RUN pipenv install --ignore-pipfile
-#CMD ["pipenv", "run", "python3", "-m", "the_weather"]
 
-# Using miniconda (make sure to replace 'myenv' w/ your environment name):
-#RUN conda env create -f environment.yml
-#CMD /bin/bash -c "source activate myenv && python3 -m the_weather"
-# FROM python:3.7
-# MAINTAINER your_name
-# ADD . /usr/src/app
-# WORKDIR /usr/src/app
-# COPY requirements.txt ./
-# RUN pip install --no-cache-dir -r requirements.txt
-# EXPOSE 8000
-# CMD exec gunicorn your_site_name.wsgi:application --bind 0.0.0.0:8000 --workers 3
+# docker tag the_weather pappubca005/docker-repo:the_weather
+# docker push pappubca005/docker-repo:the_weather
